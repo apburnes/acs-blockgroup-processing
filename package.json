@@ -1,0 +1,19 @@
+{
+  "name": "acs-blockgroup-processing",
+  "version": "0.0.1",
+  "description": "Processing and appending American Community Survey tables to block group geometry",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "Census",
+    "ACS",
+    "processing"
+  ],
+  "author": "apburnes <bizzurnzz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "turf": "^2.0.2"
+  }
+}
