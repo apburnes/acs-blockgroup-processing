@@ -9,11 +9,23 @@
   "keywords": [
     "Census",
     "ACS",
-    "processing"
+    "processing",
+    "gis",
+    "vector tiles"
   ],
   "author": "apburnes <bizzurnzz@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "csv-parser": "^1.7.0",
+    "lodash": "^3.10.1",
+    "random-points-on-polygon": "0.0.1",
+    "replace": "^0.3.0",
+    "shapefile": "^0.3.0",
     "turf": "^2.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "geojsonhint": "^1.1.0",
+    "mocha": "^2.2.5"
   }
 }
