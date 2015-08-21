@@ -22,8 +22,7 @@ var origProps = [
   'INTPTLAT',
   'INTPTLON'
 ];
-var omitProps = origProps.slice(5, origProps.length);
-var selectProps = origProps.slice(0, 5);
+var pickedProps = origProps.slice(0, 5);
 var featureCount = 2505;
 
 describe('Converting a shapefile to geojson', function() {
@@ -43,8 +42,8 @@ describe('Converting a shapefile to geojson', function() {
     });
   });
 
-  it('should convert a shapefile to an array of features and omit selected properties', function(done) {
-    convertShp(blockGroups, omitProps, function(err, features) {
+  it('should convert a shapefile to an array of features and pick selected properties', function(done) {
+    convertShp(blockGroups, pickedProps, function(err, features) {
       var after = _.after(features.length, function() {
         return done(err);
       });
@@ -53,7 +52,7 @@ describe('Converting a shapefile to geojson', function() {
 
       _.forEach(features, function(feature) {
         expect(geojsonhint.hint(feature)).to.be.empty;
-        expect(feature.properties).to.have.keys(selectProps)
+        expect(feature.properties).to.have.keys(pickedProps)
         return after();
       });
     });
