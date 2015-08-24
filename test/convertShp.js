@@ -32,6 +32,7 @@ describe('Converting a shapefile to geojson', function() {
         return done(err);
       });
 
+      expect(features).to.be.an('array');
       expect(features.length).to.be.equal(featureCount);
 
       _.forEach(features, function(feature) {
@@ -48,6 +49,7 @@ describe('Converting a shapefile to geojson', function() {
         return done(err);
       });
 
+      expect(features).to.be.an('array');
       expect(features.length).to.be.equal(featureCount);
 
       _.forEach(features, function(feature) {

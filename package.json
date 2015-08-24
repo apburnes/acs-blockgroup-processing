@@ -18,7 +18,7 @@
   "dependencies": {
     "csv-parser": "^1.7.0",
     "lodash": "^3.10.1",
-    "random-points-on-polygon": "0.0.1",
+    "random-points-on-polygon": "0.0.4",
     "replace": "^0.3.0",
     "shapefile": "^0.3.0",
     "turf": "^2.0.2"
