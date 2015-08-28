@@ -5,7 +5,7 @@ var path = require('path');
 var _ = require('lodash');
 var expect = require('chai').expect;
 var geojsonhint = require('geojsonhint');
-var pointify = require('../lib/pointify');
+var pointify = require('../lib/pointifyBlocks');
 
 var sampleFeatures = require('./fixtures/block_groups_with_acs');
 
